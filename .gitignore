@@ -1,0 +1,6 @@
+scripts/
+stylesheets/
+
+.sass-cache/
+node_modules/
+*.log

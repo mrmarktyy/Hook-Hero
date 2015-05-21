@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Hook Hero</title>
+  <link href="#" rel="icon">
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+<div id="game">
+  <div class="qr-code">
+    <img width="150" src="images/qr.png">
+    <p>Scan QR Code</p>
+    <p>Play it on your mobile devices</p>
+  </div>
+  <div class="welcome overlay">
+    <div class="game-title">Hook Hero</div>
+    <div class="btn-play"><div>Start</div></div>
+    <div class="btn-side btn-hero">Hero<div class="icon"><span>New</span></div></div>
+    <div class="btn-side btn-draw">Luck<div class="icon"><span class="draw-count"></span></div></div>
+  </div>
+  <div class="heropick hero">
+    <div class="title">Hero Family <img src="images/strawberry.png"/><span class="total pull-right"></span></div>
+    <div class="heros">
+      <!-- row -->
+      <div class="wrapper" data-src="1">
+        <div class="hero1 hero-c">
+          <img class="hero-img" src="images/1.png">
+        </div>
+      </div>
+      <div class="wrapper locked" data-src="2" data-price="10">
+        <div class="price">10 <img src="images/strawberry.png"></div>
+        <div class="hero2 hero-c">
+          <img class="hero-img" src="images/2.png">
+        </div>
+      </div>
+      <!-- row -->
+      <div class="wrapper locked" data-src="3" data-price="25">
+        <div class="price">25 <img src="images/strawberry.png"></div>
+        <div class="hero3 hero-c">
+          <img class="hero-img" src="images/3.png">
+        </div>
+      </div>
+      <div class="wrapper locked" data-src="4" data-price="40">
+        <div class="price">40 <img src="images/strawberry.png"></div>
+        <div class="hero4 hero-c">
+          <img class="hero-img" src="images/4.png">
+        </div>
+      </div>
+      <!-- row -->
+      <div class="wrapper locked" data-src="5" data-price="80">
+        <div class="price">80 <img src="images/strawberry.png"></div>
+        <div class="hero5 hero-c">
+          <img class="hero-img" src="images/5.png">
+        </div>
+      </div>
+      <div class="wrapper locked" data-src="6" data-price="100">
+        <div class="price">100 <img src="images/strawberry.png"></div>
+        <div class="hero6 hero-c">
+          <img class="hero-img" src="images/6.png">
+        </div>
+      </div>
+      <!-- row -->
+      <div class="wrapper locked" data-src="7" data-price="150">
+        <div class="price">150 <img src="images/strawberry.png"></div>
+        <div class="hero7 hero-c">
+          <img class="hero-img" src="images/7.png">
+        </div>
+      </div>
+      <div class="wrapper locked" data-src="8" data-price="300">
+        <div class="price">300 <img src="images/strawberry.png"></div>
+        <div class="hero8 hero-c">
+          <img class="hero-img" src="images/8.png">
+        </div>
+      </div>
+      <!-- row -->
+      <div class="wrapper combo locked" data-src="9" data-price="9999999">
+        <div class="price">Unlock via "Luck"</div>
+        <div class="hero9 hero-c">
+          <img class="hero-img" src="images/9.png">
+        </div>
+      </div>
+      <!-- row -->
+      <div class="wrapper combo locked" data-src="10" data-price="9999999">
+        <div class="price">Unlock via 3 times +1 combo</div>
+        <div class="hero10 hero-c">
+          <img class="hero-img" src="images/10.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="draw">
+    <div class="draw-title">I fell lucky today <span class="draw-left">Remain:<span class="draw-count">0</span></span></div>
+    <div class="drawer">
+      <img class="draw-plate" width="200" src="images/draw.png" />
+      <div class="draw-btn"></div>
+    </div>
+    <div class="draw-result">
+      <p>Congratulations! You win</p>
+      <p class="draw-prize"></p>
+    </div>
+    <p class="draw-footer">Rule: You get 1 draw every 10 score you gain in the game.</p>
+  </div>
+  <div class="game-over overlay">
+    <div class="title">Game Over!</div>
+    <div class="board">
+      <p>Score</p>
+      <p class="score"></p>
+      <p>Best</p>
+      <p class="best"></p>
+    </div>
+    <div class="actions">
+      <div class="btn btn-playagain">Play Again</div>
+      <div class="btn btn-home">Back Home</div>
+    </div>
+  </div>
+  <div class="total-score"><img src="images/strawberry.png"/><span class="total"></span></div>
+  <div class="live-score"></div>
+  <div class="heroplay hero">
+    <div class="hero1 hero-p">
+      <img class="hero-img" src="images/1.png">
+    </div>
+    <div class="hero2 hero-p">
+      <img class="hero-img" src="images/2.png">
+    </div>
+    <div class="hero3 hero-p">
+      <img class="hero-img" src="images/3.png">
+    </div>
+    <div class="hero4 hero-p">
+      <img class="hero-img" src="images/4.png">
+    </div>
+    <div class="hero5 hero-p">
+      <img class="hero-img" src="images/5.png">
+    </div>
+    <div class="hero6 hero-p">
+      <img class="hero-img" src="images/6.png">
+    </div>
+    <div class="hero7 hero-p">
+      <img class="hero-img" src="images/7.png">
+    </div>
+    <div class="hero8 hero-p">
+      <img class="hero-img" src="images/8.png">
+    </div>
+    <div class="hero9 hero-p">
+      <img class="hero-img" src="images/9.png">
+    </div>
+    <div class="hero10 hero-p">
+      <img class="hero-img" src="images/10.png">
+    </div>
+  </div>
+  <div class="stick">
+    <img class="hook-img" src="images/hook.png">
+  </div>
+  <div class="wave"></div>
+  <div class="copyright">
+    made with ♥ by <strong>Mark Zhou</strong>
+  </div>
+  <div class="ads">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1157636439125028"
+         data-ad-slot="4902172591"
+         data-ad-format="auto"></ins>
+    <script>
+      var script = document.createElement('script');
+      script.async = true;
+      script.type = 'text/javascript';
+      script.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+      document.body.appendChild(script);
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+<script src="dist/m.js"></script>
+</body>
+</html>
